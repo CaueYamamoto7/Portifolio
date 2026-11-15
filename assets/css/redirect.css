@@ -1,0 +1,96 @@
+﻿/* Fundo da página */
+html {
+    background-color: #202020;
+}
+
+/* O body funciona como o card que agrupa tudo */
+body {
+    width: 85%;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid #007396;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    text-align: center;
+}
+
+/* Foto circular */
+.selfie img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #007396
+}
+
+/* Título e apresentação */
+h1 {
+    font-size: 26px;
+}
+
+h1 small {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.topbar p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.topbar {
+    margin-bottom: 25px;
+}
+
+/* Cada link ocupa uma linha inteira */
+.cardLink a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 15px;
+    background-color: #007396;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Cor do link quando o mouse passa por cima */
+.cardLink a:hover {
+    background-color: #01556e;
+}
+
+/* Informações de contato */
+address {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #ffffff;
+    font-style: normal;
+}
+
+address h2 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+address a {
+    color: #007396;
+}
+
+/* Tamanho dos ícones da biblioteca */
+.bi {
+    font-size: 20px;
+}
+
+/* Ícone e texto dos contatos lado a lado */
+address a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
