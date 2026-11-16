@@ -114,7 +114,8 @@ aside h2 {
     text-decoration: none;
 }
 
-.menuAside a:hover {
+.menuAside a:hover,
+.menuAside a[aria-current="page"] {
     background-color: #ffffff;
     color: #007396;
 }
@@ -143,6 +144,35 @@ h1 {
 main > p {
     margin: 0;
     color: #666666;
+}
+
+/* Blocos de conteúdo da página pessoal */
+.blocoPessoal {
+    max-width: 1100px;
+    margin-top: 25px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dce3e6;
+    border-radius: 8px;
+}
+
+.blocoPessoal h2 {
+    margin: 0 0 12px;
+    font-size: 22px;
+}
+
+.blocoPessoal p {
+    margin: 0;
+    color: #444444;
+    line-height: 1.8;
+}
+
+.blocoPessoal p + p {
+    margin-top: 12px;
+}
+
+.blocoPessoal a {
+    color: #007396;
 }
 
 /* Cards dos projetos */
@@ -328,6 +358,20 @@ dialog form {
     font-size: 26px;
 }
 
+/* Rodapé padrão do portfólio */
+.rodape {
+    padding: 20px 30px;
+    background-color: #007396;
+    color: #ffffff;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.rodape p {
+    margin: 0;
+}
+
 /* Ajustes para celulares e telas menores */
 @media (max-width: 1100px) {
     .cardProjeto {
@@ -386,6 +430,10 @@ dialog form {
     }
 
     .cardProjeto {
+        padding: 20px;
+    }
+
+    .blocoPessoal {
         padding: 20px;
     }
 
