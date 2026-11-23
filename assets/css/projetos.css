@@ -441,3 +441,13 @@ dialog form {
         height: auto;
     }
 }
+@media (prefers-reduced-motion: no-preference) {
+    .paginaPessoal {
+        animation: aparecer 1s;
+    }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

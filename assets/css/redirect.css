@@ -94,3 +94,11 @@ address a {
     align-items: center;
     gap: 8px;
 }
+.selfie img {
+    animation: aparecer 1s;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
